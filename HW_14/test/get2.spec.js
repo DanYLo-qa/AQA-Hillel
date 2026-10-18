@@ -1,8 +1,10 @@
 const axios = require("axios");
 
-describe ("block of test", () => {
-    test ("first test", async() =>{
-     const response = await axios.get("https://jsonplaceholder.typicode.com/posts/1");
-     expect(response.data.title).toContain("excepturi");
-    })
-})
+describe("block of test", () => {
+  test("first test", async () => {
+    const response = await axios.get(
+      "https://jsonplaceholder.typicode.com/posts/1",
+    );
+    expect(response.data.title).toContain("excepturi");
+  });
+});
