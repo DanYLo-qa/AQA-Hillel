@@ -15,7 +15,10 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier:write" : "npx prettier . --write",
+    "eslint:write": "eslint --fix .",
+    "prepere": "husky"
   },
   "dependencies": {
     "chalk": "^6.0.0"
